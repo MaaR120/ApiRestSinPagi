@@ -1,7 +1,5 @@
 package com.example.ApiRestSinPaginacion.entity;
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.ManyToMany;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -28,5 +26,9 @@ public class Libro extends Base{
 
     @ManyToMany(cascade = CascadeType.ALL)
     public List<Autor> autores=new ArrayList<Autor>();
+
+    @ManyToOne(cascade = CascadeType.REFRESH)
+    @JoinColumn(name = "persona_id")
+    public Persona persona;
 
 }

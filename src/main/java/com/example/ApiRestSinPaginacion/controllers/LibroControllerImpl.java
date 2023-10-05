@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping(path = "apirestsinpaginacion.com/libro")
+@RequestMapping(path = "api/v1/libro")
 public class LibroControllerImpl extends BaseControllerImpl<Libro, LibroServiceImpl> implements BaseController<Libro,Long>{
 }

@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping(path = "apirestsinpaginacion.com/domicilio")
+@RequestMapping(path = "api/v1/domicilio")
 public class DomicilioControllerImpl extends BaseControllerImpl<Domicilio, DomicilioServiceImpl> implements BaseController<Domicilio,Long>{
 }

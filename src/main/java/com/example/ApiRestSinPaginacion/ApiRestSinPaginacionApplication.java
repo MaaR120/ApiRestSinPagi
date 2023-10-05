@@ -8,6 +8,7 @@ public class ApiRestSinPaginacionApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ApiRestSinPaginacionApplication.class, args);
+		System.out.println("Funcionando...");
 	}
 
 }
