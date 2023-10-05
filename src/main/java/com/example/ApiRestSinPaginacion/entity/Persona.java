@@ -6,6 +6,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 @Entity
 @NoArgsConstructor
@@ -24,5 +27,7 @@ public class Persona extends Base{
     @JoinColumn(name = "domicilio_id")
     public Domicilio domicilio;
 
+    @OneToMany(cascade = CascadeType.ALL,orphanRemoval = true)
+    private List<Libro> libroList=new ArrayList<Libro>();
 
 }

@@ -24,7 +24,12 @@ public class Libro extends Base{
 
     public int paginas;
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany(cascade = {CascadeType.MERGE,CascadeType.PERSIST})
+    @JoinTable(
+            name = "LibroAutor",
+            joinColumns = @JoinColumn(name = "Libro_id"),
+            inverseJoinColumns = @JoinColumn(name = "Autor_id")
+    )
     public List<Autor> autores=new ArrayList<Autor>();
 
     @ManyToOne(cascade = CascadeType.REFRESH)
