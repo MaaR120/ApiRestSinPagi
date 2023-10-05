@@ -22,7 +22,4 @@ public class Autor extends Base{
 
     public String biografia;
 
-    @ManyToMany(mappedBy = "autores")
-    public List<Libro> libros=new ArrayList<Libro>();
-
 }
