@@ -32,8 +32,5 @@ public class Libro extends Base{
     )
     public List<Autor> autores=new ArrayList<Autor>();
 
-    @ManyToOne(cascade = CascadeType.REFRESH)
-    @JoinColumn(name = "persona_id")
-    public Persona persona;
 
 }
