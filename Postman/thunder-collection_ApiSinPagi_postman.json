@@ -1,0 +1,243 @@
+{
+    "info": {
+        "_postman_id": "a2a1d0f0-1f17-46bb-8342-8b4a157d9b8b",
+        "name": "ApiSinPagi",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "persona",
+            "item": [
+                {
+                    "name": "GetAll",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "https://apirestsinpagi.onrender.com/api/v1/persona",
+                            "path": [
+                                "api",
+                                "v1",
+                                "persona"
+                            ],
+                            "protocol": "https",
+                            "host": [
+                                "apirestsinpagi",
+                                "onrender",
+                                "com"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "GetOne",
+                    "request": {
+                        "method": "GET"
+                    }
+                },
+                {
+                    "name": "Save",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "https://apirestsinpagi.onrender.com/api/v1/persona",
+                            "path": [
+                                "api",
+                                "v1",
+                                "persona"
+                            ],
+                            "protocol": "https",
+                            "host": [
+                                "apirestsinpagi",
+                                "onrender",
+                                "com"
+                            ]
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"nombre\":\"Manuel\",\n  \"apellido\":\"Guerra\",\n  \"dni\":15441323,\n  \"domicilio\":{\n      \"calle\":\"pilares\",\n      \"numero\":233,\n        \"localidad\":{\n          \"denominacion\":\"Godoy Cruz\"\n        }\n  },\n  \"librolist\":[{\n  \"titulo\":\"ColoRin ColoRado\",\n\n  \"fecha\":2023,\n\n  \"genero\":\"Drama-Comedia\",\n\n  \"paginas\":99,\n  \n  \"autores\":[{\n      \"nombre\":\"Martin\",\n  \n      \"apellido\":\"Manrrique\",\n  \n      \"biografia\":\"Un genio el loko\"\n  }]\n},\n{\n  \"titulo\":\"La Caperucita\",\n\n  \"fecha\":1987,\n\n  \"genero\":\"Infantil\",\n\n  \"paginas\":30,\n  \n  \"autores\":[{\n      \"nombre\":\"Luis\",\n  \n      \"apellido\":\"Di Caprio\",\n  \n      \"biografia\":\"Otro genio, un poco menos que Martin\"\n  }]\n}\n]\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "Delete",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "https://apirestsinpagi.onrender.com/api/v1/persona/5",
+                            "path": [
+                                "api",
+                                "v1",
+                                "persona",
+                                "5"
+                            ],
+                            "protocol": "https",
+                            "host": [
+                                "apirestsinpagi",
+                                "onrender",
+                                "com"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Update",
+                    "request": {
+                        "method": "GET"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "domicilio",
+            "item": [
+                {
+                    "name": "Save",
+                    "request": {
+                        "method": "GET"
+                    }
+                },
+                {
+                    "name": "Delete",
+                    "request": {
+                        "method": "GET"
+                    }
+                },
+                {
+                    "name": "GetALL",
+                    "request": {
+                        "method": "GET"
+                    }
+                },
+                {
+                    "name": "GetOne",
+                    "request": {
+                        "method": "GET"
+                    }
+                },
+                {
+                    "name": "Update",
+                    "request": {
+                        "method": "GET"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "libro",
+            "item": [
+                {
+                    "name": "Save",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "https://apirestsinpagi.onrender.com/api/v1/libro",
+                            "path": [
+                                "api",
+                                "v1",
+                                "libro"
+                            ],
+                            "protocol": "https",
+                            "host": [
+                                "apirestsinpagi",
+                                "onrender",
+                                "com"
+                            ]
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"titulo\":\"ColoRin ColoRado\",\n\n  \"fecha\":2023,\n\n  \"genero\":\"Drama-Comedia\",\n\n  \"paginas\":99,\n  \n  \"autores\":[{\n      \"nombre\":\"Martin\",\n  \n      \"apellido\":\"Manrrique\",\n  \n      \"biografia\":\"Un genio el loko\"\n  }\n  ]\n\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "GetAll",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "https://apirestsinpagi.onrender.com/api/v1/libro",
+                            "path": [
+                                "api",
+                                "v1",
+                                "libro"
+                            ],
+                            "protocol": "https",
+                            "host": [
+                                "apirestsinpagi",
+                                "onrender",
+                                "com"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Delete",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "https://apirestsinpagi.onrender.com/api/v1/libro/1",
+                            "path": [
+                                "api",
+                                "v1",
+                                "libro",
+                                "1"
+                            ],
+                            "protocol": "https",
+                            "host": [
+                                "apirestsinpagi",
+                                "onrender",
+                                "com"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "GetOne",
+                    "request": {
+                        "method": "GET"
+                    }
+                },
+                {
+                    "name": "Update",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "https://apirestsinpagi.onrender.com/api/v1/libro/1",
+                            "path": [
+                                "api",
+                                "v1",
+                                "libro",
+                                "1"
+                            ],
+                            "protocol": "https",
+                            "host": [
+                                "apirestsinpagi",
+                                "onrender",
+                                "com"
+                            ]
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"id\":1,\n  \n  \"titulo\":\"ColoRin ColoRado\",\n\n  \"fecha\":2023,\n\n  \"genero\":\"Drama-Comedia\",\n\n  \"paginas\":99,\n  \n  \"autores\":[{\n      \"nombre\":\"Martin\",\n  \n      \"apellido\":\"Manrrique\",\n  \n      \"biografia\":\"Un genio el loko\"\n  }\n  ]\n\n}"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
